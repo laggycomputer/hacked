@@ -1,3 +1,6 @@
+# Throughout this file, remember to use {{ in place of { and }} in place of }, as all strings here will be treated with .format().
+
+# Introductory message, sent when a user first joins. {0} will be replaced by the bot prefix.
 msg = """
 Welcome to hacked.!
 This is a Discord Bot to teach people how to program.
@@ -31,6 +34,9 @@ output = input[0]; // the first letter is the output now and it will be tested a
 You can always use `{0}run` to try out code outside from `{0}solve`.
 """
 
+# Tasks, in a giant dictionary
+# For checks, remember that arrays are outputted as strings from the checker. Therefore, expect string outputs for these data types.
+# The format for names is just integers, and key values are ["task name", "description", [array of arrays of check inputs and expected outputs]]
 tasks = {
     1: [
         "Variables",

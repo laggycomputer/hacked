@@ -9,8 +9,8 @@ Type `{0}start` to start (you figured it out)
 Type `{0}task` to view your current task
 Type `{0}solve` to solve your current task in a code-style.
 
-The codeblocks here use JS syntax highlight because it's similar to Mamba.
-Of course it works with any other markdown as well.
+The codeblocks here use JavaScript syntax highlight because that's the most similar to Mamba, the coding language used by this bot.
+Of course, any other highlight works, but it may not be as accurate.
 
 e.g.
 ```
@@ -93,17 +93,18 @@ Make the `output` be the square of `input`, that divided by 2 and then plus 1/4 
     4: [
         "Strings",
         """
-Very well done! The next data type is the String.
-Strings are any characters, meaning it's basically text.
+Very well done! The next data type is the string.
+Strings are any characters, meaning text essentially..
 You can put strings in `"my text"` (double quotes) or `'my text'` (single quotes), it's down to personal preferences.
+Just make sure you use the same quotes for the beginning and end of a string (don't mix and match).
 
 They can also be formatted, that will come later on.
-For now, they also support basic "maths".
+For now, they also support additive arithmetic, or basic math operations like multiplication or addition.
 `"hi" * 5` is `"hihihihihi"`
 `"hi " + "how are you?"` is `"hi how are you?"`
 They do not support `-` or `/`.
 
-Make output repeat the input text 4 times and add a `!` to the end.
+Your goal is to make output repeat the input text 4 times and add a `!` to the end.
         """,
         [
             ["'Nani'", "NaniNaniNaniNani!"],
@@ -114,9 +115,9 @@ Make output repeat the input text 4 times and add a `!` to the end.
     5: [
         "Arrays - 1",
         """
-Awesome! The new data type introduced now is the Array. It has many functions, that's why the next tasks are all about arrays.
+Awesome! The new data type introduced here is the array. It has many functions, so there will be several tasks to follow about it.
 Arrays are a kind of list - they can hold any number of items.
-Arrays themselves can hold more arrays!
+Arrays themselves can hold anything - even more arrays!
 They are notated like this:
 `myArray = [1, 2, 3, 4, 5, 6, "7th item"];`
 `myArray2 = [[1, 2, 3, 4], ["a second array in the array", "yes nice, isn't it?"]];`
@@ -128,7 +129,7 @@ array_push(array, 1);
 say(array); // is [1]
 ```
 
-Your task is to make an array that consists of 3 sub-arrays with two times input in them each.
+Your task is to make an array that consists of 3 sub-arrays. Each sub-array should contain two elements, both of which are the input.
 If you can, try to use `array_push`, but it is possible without.
         """,
         [
@@ -144,8 +145,8 @@ If you can, try to use `array_push`, but it is possible without.
         "Arrays - 2",
         """
 Great job! Arrays feature even more!
-You can select specific items, insert at a specific point and remove at a specific point.
-Array items have a sorting, means, the first item can be referenced as 0, the second as 1, the third as 2, and so on.
+You can select specific items, insert items at a specific point and remove items at a specific point.
+Array items have a sorting, meaning the first item can be referenced as 0, the second as 1, the third as 2, and so on.
 The last item can be referenced as -1, the second last as -2, etc.
 
 The `[index]` determines that you want the specific item from the array at the index. (This even works with strings!)
@@ -170,7 +171,7 @@ say(item, array); // 4, [1, 2, 2.5, 3]
 ```
 
 Your task now is to make `output` be an array. The first element of `output` should be the last element of `input` and the last element of `output` should be the first element of `input`.
-Between the first and last item should always be the rest of `input` as an array in the array (`[..., [my array], ...]`).
+Between the first and last item should always be the rest of `input` (without the first and last element) as an array in the array (`[..., [my array], ...]`).
 Good luck!
         """,
         [
@@ -186,11 +187,11 @@ Good luck!
         "Arrays - 3",
         """
 Nice job! That was quite a hard task, wasn't it?
-Arrays can do even more than you know: There is `array_sort(array)`, which will sort the array.
+Arrays can do even more: there is `array_sort(array)`, which will sort the array.
 If it's an array of numbers, it will sort them ascending, strings will be sorted alphabetically.
 `array_reverse(array)` is self-explanatory.
 
-Your task now is to make `output` the sorted but reversed `input`, but the last item should always be `2018`.
+Your task now is to make `output` the sorted but reversed `input`, but the last item should be replaced by `2019`.
         """,
         [
             [[1, 3, 2, 4], "[4, 3, 2, 2018]"],
@@ -211,7 +212,7 @@ for thing in myArray {{
 ```
 
 That code would go though every item in the array myArray, and print it out.
-Inside the loop, `thing` can be any variable name and will be the item that is currently being iterated.
+Remember, `thing` can be any variable name and will be the item that is currently being iterated.
 After the array has been processed, the code continues running below.
 Remember that everything inside the `{{}}` is considered part of the loop, everything else is not.
 Now, your task is to take an input, and assign `output` to `input`'s reverse, with each item in the list being doubled.

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Throughout this file, remember to use {{ in place of { and }} in place of }, as all strings here will be treated with .format().
 
 # Introductory message, sent when a user first joins. {0} will be replaced by the bot prefix.

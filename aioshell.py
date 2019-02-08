@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import asyncio
 from asyncio.subprocess import PIPE, STDOUT
 
